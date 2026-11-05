@@ -1,356 +1,173 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landgc | 个人主页</title>
-    <style>
-        :root {
-            --primary: #0f766e;      /* 主题色：深青绿 */
-            --primary-light: #f0fdfa; /* 浅色背景点缀 */
-            --text-dark: #1e293b;    /* 主标题与正文深灰 */
-            --text-muted: #64748b;   /* 次要文字浅灰 */
-            --bg-body: #f8fafc;      /* 页面整体浅灰底色 */
-            --bg-card: #ffffff;      /* 卡片纯白底色 */
-            --border: #e2e8f0;       /* 边框颜色 */
-        }
+	<head>
+		<title>Landgc | 个人主页</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+				<!-- Intro 全屏首屏欢迎区 -->
+					<div id="intro">
+						<h1>Hello, I'm<br />
+						Landgc</h1>
+						<p>绿色低碳技术研发 & 环境咨询工程师<br />
+						致力于矿区与能源工程双碳标准核算、环境系统耦合建模与 Python / AI 自动化工作流探索。</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
 
-        /* 顶部导航栏 */
-        header {
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(8px);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 1px solid var(--border);
-        }
+				<!-- Header 顶部标志 -->
+					<header id="header">
+						<a href="index.html" class="logo">Landgc</a>
+					</header>
 
-        .nav-container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 1rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+				<!-- Nav 导航栏（支持页内平滑滚动） -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="#main" class="scrolly">关于我</a></li>
+							<li><a href="#projects" class="scrolly">核心工作与研究</a></li>
+							<li><a href="#footer" class="scrolly">技能与联系</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/Landgc" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
+				<!-- Main 主体内容区 -->
+					<div id="main">
 
-        .nav-links a {
-            margin-left: 1.5rem;
-            text-decoration: none;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            transition: color 0.2s;
-        }
+						<!-- Featured Post 核心个人简介 -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">About Me</span>
+									<h2><a href="#projects" class="scrolly">绿色低碳技术研发<br />
+									与环境系统工程咨询</a></h2>
+									<p>毕业于南开大学资源与环境专业，目前就职于辽宁沈阳，从事绿色低碳技术研发、环境影响评价与碳中和咨询工作。<br />
+									平时热衷于探索工程与环境的系统耦合建模，并利用 Python 与 AI 工具构建自动化办公与工程数据处理工作流。</p>
+								</header>
+								<a href="#projects" class="image main scrolly"><img src="images/pic01.jpg" alt="Featured Cover" /></a>
+								<ul class="actions special">
+									<li><a href="#projects" class="button large scrolly">浏览核心方向</a></li>
+								</ul>
+							</article>
 
-        .nav-links a:hover {
-            color: var(--primary);
-        }
+						<!-- Posts 4大核心板块网格 -->
+							<section class="posts" id="projects">
+								<article>
+									<header>
+										<span class="date">Carbon Neutrality</span>
+										<h2><a href="#projects">双碳标准与<br />
+										碳核算研究</a></h2>
+									</header>
+									<a href="#projects" class="image fit"><img src="images/pic02.jpg" alt="Carbon Accounting" /></a>
+									<p>聚焦矿区与能源工程领域的温室气体排放核算体系构建，参与编制清洁能源投资碳减排核算团体标准与国际标准提案，推动全过程低碳咨询与减排路径落地。</p>
+									<ul class="actions special">
+										<li><span class="button">碳排放核算 · 标准编制</span></li>
+									</ul>
+								</article>
 
-        /* 主体容器 */
-        main {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
+								<article>
+									<header>
+										<span class="date">System Modeling</span>
+										<h2><a href="#projects">环境系统建模与<br />
+										环境影响评价</a></h2>
+									</header>
+									<a href="#projects" class="image fit"><img src="images/pic03.jpg" alt="Environmental Modeling" /></a>
+									<p>运用系统动力学模型与空间分析工具，开展多维环境损害耦合机制研究及工程环评、后评价工作，精准量化能源、水、大气、噪声及碳排放的跨系统传输路径。</p>
+									<ul class="actions special">
+										<li><span class="button">系统动力学 · ArcGIS · EIA</span></li>
+									</ul>
+								</article>
 
-        section {
-            margin-bottom: 3.5rem;
-        }
+								<article>
+									<header>
+										<span class="date">Python & AI Workflow</span>
+										<h2><a href="#projects">Python 自动化与<br />
+										AI 工具探索</a></h2>
+									</header>
+									<a href="#projects" class="image fit"><img src="images/pic04.jpg" alt="Python and AI" /></a>
+									<p>结合 Pandas、openpyxl、python-docx 与 Streamlit 搭建轻量级数据处理与可视化应用，探索 AI Agent 与本地办公文档工作流的深度集成，大幅提升工程报告编制效率。</p>
+									<ul class="actions special">
+										<li><span class="button">Python · Streamlit · AI Agent</span></li>
+									</ul>
+								</article>
 
-        /* 个人简介主视觉区 (Hero) */
-        .hero {
-            background: var(--bg-card);
-            padding: 3rem 2.5rem;
-            border-radius: 16px;
-            border: 1px solid var(--border);
-            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
-            text-align: left;
-        }
+								<article>
+									<header>
+										<span class="date">Green Engineering</span>
+										<h2><a href="#projects">绿色矿山与<br />
+										生态治理技术研发</a></h2>
+									</header>
+									<a href="#projects" class="image fit"><img src="images/pic05.jpg" alt="Green Tech R&D" /></a>
+									<p>面向矿区生态修复、清洁供能改造与灾害协同治理需求，开展前沿绿色技术研发、可行性论证、技术创新成熟度评估与科研项目规划设计。</p>
+									<ul class="actions special">
+										<li><span class="button">绿色技术研发 · 工程设计咨询</span></li>
+									</ul>
+								</article>
+							</section>
 
-        .tag-badge {
-            display: inline-block;
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 0.3rem 0.8rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
+					</div>
 
-        .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.75rem;
-            color: var(--text-dark);
-        }
+				<!-- Footer 底部技能栈与联系方式 -->
+					<footer id="footer">
+						<section>
+							<h3>专业工具与技能栈 (Skills & Tools)</h3>
+							<p>在工程咨询、科研绘图与自动化开发中的常用工具组合：</p>
+							<ul>
+								<li><strong>环境评价与碳管理：</strong>EIAProA 2018 (大气预测)、EIAProN 2021 (噪声预测)、温室气体核算体系</li>
+								<li><strong>空间与工程制图：</strong>ArcGIS (ArcMap / ArcGIS Pro)、AutoCAD、Origin 科研绘图</li>
+								<li><strong>编程与数字办公：</strong>Python (Pandas / Streamlit / openpyxl)、VS Code、AI Agent 工作流构建</li>
+							</ul>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>所在地 (Location)</h3>
+								<p>中国 · 辽宁省沈阳市</p>
+							</section>
+							<section>
+								<h3>研究与专业背景 (Education)</h3>
+								<p>资源与环境硕士 (南开大学)</p>
+							</section>
+							<section>
+								<h3>联系邮箱 (Email)</h3>
+								<p><a href="mailto:your_email@example.com">your_email@example.com（可修改为你的邮箱）</a></p>
+							</section>
+							<section>
+								<h3>开源主页 (Social)</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/Landgc" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
 
-        .hero p {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            max-width: 720px;
-            margin-bottom: 1.5rem;
-        }
+				<!-- Copyright 版权声明 -->
+					<div id="copyright">
+						<ul><li>&copy; 2026 Landgc</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
 
-        .btn-group {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+			</div>
 
-        .btn {
-            display: inline-block;
-            padding: 0.65rem 1.4rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
+		<!-- Scripts 模板核心脚本 -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-        .btn-primary {
-            background: var(--primary);
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background: #115e59;
-            transform: translateY(-1px);
-        }
-
-        .btn-outline {
-            border: 1px solid var(--border);
-            color: var(--text-dark);
-            background: #fff;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        /* 章节标题 */
-        .section-title {
-            font-size: 1.4rem;
-            margin-bottom: 1.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .section-title::before {
-            content: "";
-            display: inline-block;
-            width: 5px;
-            height: 22px;
-            background: var(--primary);
-            border-radius: 4px;
-        }
-
-        /* 网格卡片布局 */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.25rem;
-        }
-
-        .card {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06);
-        }
-
-        .card h3 {
-            font-size: 1.15rem;
-            margin-bottom: 0.5rem;
-            color: var(--text-dark);
-        }
-
-        .card p {
-            font-size: 0.92rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .card-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-        }
-
-        .card-tags span {
-            font-size: 0.75rem;
-            background: var(--bg-body);
-            color: var(--text-muted);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            border: 1px solid var(--border);
-        }
-
-        /* 技能标签组 */
-        .skills-container {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-        }
-
-        .skill-item {
-            background: var(--primary-light);
-            color: var(--primary);
-            padding: 0.45rem 1rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        /* 页脚 */
-        footer {
-            text-align: center;
-            padding: 2.5rem 1.5rem;
-            border-top: 1px solid var(--border);
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            .hero {
-                padding: 2rem 1.5rem;
-            }
-            .hero h1 {
-                font-size: 1.75rem;
-            }
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- 顶部导航 -->
-    <header>
-        <div class="nav-container">
-            <a href="#" class="logo">Li Gaocheng</a>
-            <nav class="nav-links">
-                <a href="#about">关于我</a>
-                <a href="#projects">核心工作</a>
-                <a href="#skills">技术栈</a>
-                <a href="#contact">联系方式</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <!-- 个人简介区 -->
-        <section id="about" class="hero">
-            <span class="tag-badge">绿色低碳技术研发 & 环境咨询</span>
-            <h1>你好，我是Landgc 👋</h1>
-            <p>
-                毕业于南开大学资源与环境专业，目前就职于沈阳，从事绿色低碳技术研发、环境影响评价与碳中和咨询工作。平时热衷于探索工程与环境的系统耦合建模，并利用 Python 与 AI 工具构建自动化办公与数据处理工作流。
-            </p>
-            <div class="btn-group">
-                <a href="#projects" class="btn btn-primary">浏览我的项目</a>
-                <a href="https://github.com/Landgc" target="_blank" class="btn btn-outline">访问 GitHub</a>
-            </div>
-        </section>
-
-        <!-- 核心工作与项目展示 -->
-        <section id="projects">
-            <h2 class="section-title">核心研究与实践</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🌱 双碳标准与碳核算研究</h3>
-                    <p>聚焦矿区与能源工程领域的温室气体排放核算体系构建，参与编制清洁能源投资碳减排核算团体标准与国际标准提案，推动全过程低碳咨询落地。</p>
-                    <div class="card-tags">
-                        <span>碳排放核算</span>
-                        <span>标准编制</span>
-                        <span>清洁能源耦合</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>📊 环境系统建模与影响评价</h3>
-                    <p>运用系统动力学模型与空间分析工具，开展多维环境损害耦合机制研究及工程环评、后评价工作，精准量化水、气、声及碳排放的跨系统传输路径。</p>
-                    <div class="card-tags">
-                        <span>系统动力学</span>
-                        <span>ArcGIS</span>
-                        <span>环境影响评价</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>🐍 Python 自动化与 AI 工具探索</h3>
-                    <p>结合 Pandas、openpyxl 与 Streamlit 搭建轻量级数据处理与可视化应用，探索 AI Agent 与本地办公文档工作流的深度集成，提升工程报告编制效率。</p>
-                    <div class="card-tags">
-                        <span>Python</span>
-                        <span>Streamlit</span>
-                        <span>AI 工作流</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 专业技能 -->
-        <section id="skills">
-            <h2 class="section-title">工具与技能栈</h2>
-            <div class="skills-container">
-                <span class="skill-item">环境影响评价 (EIAProA / EIAProN)</span>
-                <span class="skill-item">碳排放核算与管理</span>
-                <span class="skill-item">ArcGIS 空间制图</span>
-                <span class="skill-item">AutoCAD 工程制图</span>
-                <span class="skill-item">Origin 科研绘图</span>
-                <span class="skill-item">Python (Pandas / Streamlit)</span>
-                <span class="skill-item">AI Agent 应用搭建</span>
-            </div>
-        </section>
-
-        <!-- 联系方式 -->
-        <section id="contact">
-            <h2 class="section-title">联系与交流</h2>
-            <div class="card">
-                <p style="margin-bottom: 0.5rem;">如果你对绿色低碳技术、环境系统建模或 Python 自动化感兴趣，欢迎随时联系交流：</p>
-                <p style="margin-bottom: 0;">
-                    📍 <strong>所在地：</strong>辽宁·沈阳 &nbsp;|&nbsp; 
-                    💻 <strong>GitHub：</strong><a href="https://github.com/Landgc" target="_blank" style="color: var(--primary);">github.com/Landgc</a> &nbsp;|&nbsp; 
-                    ✉️ <strong>邮箱：</strong>your_email@example.com（可替换为你的真实邮箱）
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Landgc · Built with HTML & CSS · Hosted on GitHub Pages</p>
-    </footer>
-
-</body>
+	</body>
 </html>
